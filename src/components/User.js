@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
 
 const User=({isloggedIn,name,surname,friends,adress})=>{
+    if(isloggedIn){        
+        return <div>Not Logged In</div>
+    }
     return( 
         <div>
-            {isloggedIn ? <h1>{name} {surname}</h1> : <h1>Not Logged In</h1>}
+            <h1>{name} {surname}</h1>
             <ul>
                 { 
                     friends.map((friend,index)=>{                 
@@ -25,5 +28,7 @@ User.propTypes={
         zip:PropTypes.number.isRequired
     })
 }
-
+User.defaultProps={ 
+    isloggedIn:false,
+}
 export default User;
