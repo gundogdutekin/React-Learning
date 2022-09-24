@@ -1,10 +1,11 @@
 import './App.css';
-import Header from "./components/Header";
+import User from "./components/User";
 
 function App() {
   return (
-    <div className="App">
-       <Header />
+    <div >
+       <User name={"Tekin"} surname="Gündoğdu" isloggedIn={true} friends={['Ali','Veli','Deli','Ahmet']}/>
+     
     </div>
   );
 }
