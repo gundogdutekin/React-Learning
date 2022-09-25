@@ -11,9 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container{
+  margin:0 auto;
+}
 div{
-  text-align: center;
- 
+
+  margin:0 auto;
 }
 .red{
   color: red;
@@ -47,10 +50,23 @@ div h6{
 .btn:hover{
   background-color: rgb(136, 136, 225);
 }
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 label  {
   font-size: 2rem;
   color: blue;
   font-weight: bold;
+  min-width:33.33%;
+  text-align: right;
+  margin-right:20px;
+  justify-items: flex-end;
+
 }
 input {
   font-size: 2rem;
@@ -58,16 +74,18 @@ input {
   margin: 10px;
   border: 1px solid rgb(202, 200, 200);
   border-radius:4px;
+  width:33.33%;
+  
 }
 input:focus{
   outline: none;
   border: 1px solid blue;
 }
 .display{
+  text-align: center;
   font-size: 2rem;
   color: blue;
   font-weight: bold;
-  margin: 10px;
-  text-align: left;
-  margin-left: 153px;
+ 
+ 
 }
