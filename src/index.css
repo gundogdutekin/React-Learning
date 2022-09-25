@@ -27,6 +27,10 @@ div h1{
 }
 div h3{
 
+  font-size: 10rem; 
+  font-weight: bold;
+}
+div h6{
   font-size: 2rem; 
   font-weight: bold;
 }
@@ -42,4 +46,28 @@ div h3{
 }
 .btn:hover{
   background-color: rgb(136, 136, 225);
+}
+label  {
+  font-size: 2rem;
+  color: blue;
+  font-weight: bold;
+}
+input {
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(202, 200, 200);
+  border-radius:4px;
+}
+input:focus{
+  outline: none;
+  border: 1px solid blue;
+}
+.display{
+  font-size: 2rem;
+  color: blue;
+  font-weight: bold;
+  margin: 10px;
+  text-align: left;
+  margin-left: 153px;
 }
