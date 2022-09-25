@@ -4,6 +4,9 @@ function EffectExample() {
     const [count, setCount] = useState(0);
     const [name, setName] = useState('Tekin');
     useEffect(() => { 
+     console.log("Component  mounted");
+ }, []);
+    useEffect(() => { 
         console.log("Counter state mounted");
     }, [count]);
     useEffect(() => { 
