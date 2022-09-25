@@ -1,7 +1,7 @@
 import { useState} from "react";
 //import User from "./components/User";
 function App() {
-
+ 
   const [name,setName]=useState("Tekin");
   const [age,setAge]=useState(40);
   const oldFriends=["Ali","Veli","Ayşe"];
@@ -18,7 +18,8 @@ function App() {
  
 
   return (
-    <>
+   
+     <div>
     <h1>Merhaba {name}</h1>
     <h1>Yaş {age}</h1>
     <button onClick={()=>setName("Emin Burak")}>Change Name</button>
@@ -34,8 +35,8 @@ function App() {
     <h1>Adress</h1>
     <div>{adress.title} {adress.zip}</div>
     <button onClick={()=>setAdress({...adress,title:'Ankara'})}>Change Adress</button>
-    </>
-   /* <div >
+    </div>
+   /*<div >
        <User adress={{title:'Bağcılar/İstanbul',zip:34495}} name={"Tekin"} surname="Gündoğdu" isloggedIn={true} friends={['Ali','Veli','Deli','Ahmet']}/>
      
     </div>*/
