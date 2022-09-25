@@ -15,8 +15,8 @@ code {
   margin:0 auto;
 }
 div{
-
   margin:0 auto;
+  text-align: center;
 }
 .red{
   color: red;
@@ -46,6 +46,7 @@ div h6{
   padding: 10px;
   margin: 10px;
   cursor: pointer;
+  text-align: center;
 }
 .btn:hover{
   background-color: rgb(136, 136, 225);
